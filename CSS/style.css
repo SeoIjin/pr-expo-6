@@ -1,0 +1,245 @@
+  /* Reset some basic styles */
+  body, h1, h2, h3, h4, p {
+    margin: 0;
+  }
+  /* Navbar styling */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 0px solid #444;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  nav .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  .nav-left {
+    color: black;
+  }
+  nav li {
+    display: inline;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  /* Change font color of anchor tags in the nav */
+  nav li a {
+    color: black; /* Set the color of the links to black */
+    text-decoration: none; /* Remove underline */
+  }
+  /* Add hover effect to change color to gray */
+  nav li a:hover {
+    color: gray; /* Change color to gray on hover */
+  }
+  /* Button styling for Register and Login */
+  .container {
+    display: flex;
+    position: absolute; /* Position it in relation to the navbar */
+    top: 15px; /* Space from the top */
+    left: 1135px; /* Adjust horizontal spacing from the right */
+  }
+  .container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+  }
+  .container .btn:hover {
+    background-color: #45a049;
+  }
+  .login-form {
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  .login {
+    margin: 15px 0;
+  }
+  .login a {
+    margin-left: 20px;
+  }
+  input[type="email"],
+  input[type="email"],
+  input[type="password"],
+  input[type="confirm_password"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  input[type="email"]:focus
+  input[type="email"]:focus
+  input[type="password"]:focus 
+  input[type="confirm_password"]:focus {
+    border-color:#007bff;
+    outline: none;
+  }
+  button {
+    background-color: green;
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    
+  }
+  button:hover {
+    background-color: #ccc;
+  }
+  /* Body styling */
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  /* Content styling */
+  .content {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .content h1 {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans';
+    font-size: 50px;
+    font-weight: 1000px;
+    margin-top: 15px;
+  }
+  .animated-background {
+    height: 600px; 
+    background-size: 100%;
+    animation: BgAnimation 10s linear infinite;
+  }
+  @keyframes BgAnimation {
+    0% {
+      background-image: url(Massage.jpg);
+    }
+    50% {
+      background-image: url(Yoga2.jpeg);
+    }
+    100% {
+      background-image: url(Acupuncture.jpg);
+    }
+  }
+  .Info, .Benefits, .Book {
+    border: 3px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .Book {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .Book button {
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s;
+  }
+  .Book button:hover {
+    background-color: #45a049;
+  }
+  .Info h3, .Benefits h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer {
+    border: 0px solid black;
+    height: 300px; /* Adjust height as needed */
+    background-color: rgb(14, 199, 38);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .copyright {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .services {
+    flex: 1px;
+    text-align: center;
+    position: relative;
+    right: 110px;
+  }
+  .contact {
+    flex: 1px;
+    text-align: center;
+    position: relative;
+    right: 90px;
+  }
+  .about {
+    text-align: center;
+    position: relative;
+    right: 70px
+  }
+  footer p, footer a {
+    margin: 5px;
+    padding: 0.5px;
+    color: white;
+  }
+  .booking {
+    margin-bottom: 15px;
+  }
+  .booking label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .booking input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  .booking input:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  .booking button {
+    height: 40px;
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .booking button:hover {
+    background-color: darkgreen;
+  }
